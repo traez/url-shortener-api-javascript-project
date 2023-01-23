@@ -1,0 +1,139 @@
+/* 
+1080x1920 (360 * 3/480 * 4)
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: auto;
+}
+body{
+    background-color: hsl(0, 0%, 75%);
+    padding:1rem;
+    font-family: 'Trebuchet MS';
+    display: flex;
+	  flex-flow: column;
+  	justify-content: center; 
+	  align-items: center;
+    width: 100%;
+    height: auto;
+}
+main{
+    width: 22rem;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(204, 63%, 47%);
+    color: hsl(0, 0%, 13%);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display:grid;
+    grid-template: 4rem 8rem 2rem auto 2rem/auto;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+}
+h1{
+  grid-area: one;
+  font-size: 1.4rem;
+  text-align: center;
+}
+header{
+  grid-area: two;
+  border: 2px solid hsl(0, 0%, 73%);
+  display: flex;
+	flex-flow: column;
+  justify-content: center; 
+	align-items: center;
+  gap:0.5rem;
+  padding: 0.5rem;
+}
+h2{
+  font-size: 1.2rem;
+  text-align: center;
+}
+form{
+  display: flex;
+	flex-flow: row;
+  justify-content: center; 
+	align-items: center;
+  height:1rem;
+}
+#enter-link{
+  padding: 0.2rem;
+}
+#shorten-btn{
+  padding: 0.2rem;
+  color: white;
+  background-color: hsl(0, 0%, 13%);
+  cursor: pointer;
+}
+#shorten-btn:hover{
+  background-color: hsl(0, 0%, 33%);
+}
+h3{
+  font-size: 0.9rem;
+  text-align: center;
+}
+menu{
+  grid-area: three;
+  border: 2px solid hsl(0, 0%, 73%);
+  display: flex;
+	flex-flow: row;
+  justify-content: space-evenly; 
+	align-items: center;
+  gap:0.5rem;
+}
+menu > li{
+  list-style: none;
+  border: 1px solid hsl(204, 63%, 47%);
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  color: white;
+  background-color: hsl(0, 0%, 13%);
+}
+section{
+  grid-area: four;
+  display: flex;
+	flex-flow: column;
+  justify-content: center; 
+	align-items: flex-start;
+  gap:0.5rem;
+  min-height: 8rem;
+}
+ul{
+  display: flex;
+	flex-flow: row;
+  justify-content: space-evenly; 
+	align-items: center;
+  gap:0.5rem;
+  width:100%;
+}
+li{
+  list-style: none;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+  color: white;
+  background-color: hsl(204, 63%, 47%);
+}
+.copy-shortened{
+  cursor: pointer;
+}
+.copy-shortened:hover{
+  background-color: hsl(204, 63%, 67%);
+}
+footer { 
+  grid-area: five;
+  border: 2px solid hsl(0, 0%, 73%);
+  display: flex;
+	flex-flow: row;
+  justify-content: center; 
+	align-items: center;
+  font-size: 0.8rem; 
+  color: hsl(228, 45%, 44%);
+}

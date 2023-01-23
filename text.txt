@@ -1,0 +1,13 @@
+When an event listener is added to an element using the addEventListener method, it only applies to that specific element at the time the listener was added. If new elements are later added to the DOM that match the same selector, they will not have the event listener automatically applied to them. To have the event listener apply to new elements that match the same selector, you will need to use event delegation by attaching the event listener to a parent element that is present on the page at all times, and then use the event.target to determine if the event occurred on an element that you are interested in.
+
+// Get the parent element to listen for events on
+var parent = document.getElementById("parent");
+
+// Add an event listener to the parent element
+parent.addEventListener("click", function(event) {
+  // Check if the clicked element is a child of the parent
+  if (event.target.parentNode === parent) {
+    // The clicked element is a child of the parent, so do something
+    console.log("Child element clicked!");
+  }
+});
