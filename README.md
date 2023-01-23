@@ -28,8 +28,8 @@ This is a modified solution to the [URL shortening API landing page challenge on
 
 ### Links
 
-- Solution URL: [https://github.com/traez/quiz-app-project-using-fetch-api-and-javascript](https://github.com/traez/quiz-app-project-using-fetch-api-and-javascript)
-- Live Site URL: [https://traez.github.io/quiz-app-project-using-fetch-api-and-javascript/](https://traez.github.io/quiz-app-project-using-fetch-api-and-javascript/)
+- Solution URL: [https://github.com/traez/url-shortener-api-javascript-project](https://github.com/traez/url-shortener-api-javascript-project)
+- Live Site URL: [https://traez.github.io/url-shortener-api-javascript-project/](https://traez.github.io/url-shortener-api-javascript-project/)
 
 ## My process
 
@@ -44,7 +44,7 @@ This is a modified solution to the [URL shortening API landing page challenge on
 
 ### What I learned
 
-- Project was an API - localStorage combo. Many websites now integrate URL shortening as part of their normal workflow. Still I enjoyed proving my skills building this bit.ly killer.  
+- Project (a URL Shortening service) was an API - localStorage combo. Many websites now integrate URL shortening as part of their normal workflow. Still I enjoyed proving my skills building this bit.ly killer.  
 - frontendmentor.io challenges are heavy on CSS, so had to modify challenge being that JavaScript is my main focus currently. Project meets all JavaScript features of original frontendmentor project, but with much lighter CSS effects.     
 
 ### Continued development
